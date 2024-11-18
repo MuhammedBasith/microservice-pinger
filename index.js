@@ -1,11 +1,9 @@
-// index.js
-
-// Load environment variables from .env file
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 // Import necessary libraries
-const fetch = require('node-fetch');
-const https = require('https');
+import fetch from 'node-fetch';
+import https from 'https';
 
 // Create an HTTPS agent to disable SSL verification (for dev purposes only)
 const agent = new https.Agent({
