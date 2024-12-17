@@ -44,5 +44,5 @@ const pingAllUrls = () => {
     urls.forEach(pingUrl);
 };
 
-// Ping all URLs
-pingAllUrls();
+// Ping all URLs every 20 seconds
+setInterval(pingAllUrls, 20000); // 20000 milliseconds = 20 seconds
